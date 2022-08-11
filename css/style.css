@@ -1,0 +1,407 @@
+:root {
+    --white:#ffffff;
+    --blue: #0D606F;
+    --orange: #F2785C;
+    --cream: #F8F8F8;
+  }
+  /*(FONTS 
+  font-family: 'Aleo', serif;
+  font-family: 'Red Hat Text', sans-serif;
+  font-family: 'Magra', sans-serif;
+  */
+
+  /* aleo-regular - latin */
+  @font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/aleo-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/aleo-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* aleo-italic - latin */
+  @font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/aleo-v11-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/aleo-v11-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* aleo-700 - latin */
+  @font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/aleo-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/aleo-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* magra-regular - latin */
+@font-face {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/magra-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/magra-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* red-hat-text-500 - latin */
+  @font-face {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/red-hat-text-v11-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/red-hat-text-v11-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #E5E5E5;
+  }
+  li, a, button {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 95px;
+    padding-top: 40px;
+  }
+  h2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 52.92px;
+    color: var(--orange);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  h3 {
+    font: 35px Aleo, Serif; 
+    font-weight: 400;
+    line-height: 42px;
+    color: var(--blue);
+  }
+    /* Header styles start */
+  header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90px;
+    padding-left: 8.33%;
+    padding-right: 8.33%;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  }
+  .text-logo {
+    font: 32px Magra, Sans-Serif; 
+    font-weight: 600;
+    width: 180px;
+    height: 31px;
+    line-height: 38.88px;
+  }
+  .menu-box {
+    list-style: none;
+    margin-left: 158px;
+    margin-right: 196px;
+  }
+  .menu-box li {
+    display: inline-block;
+    margin-right: 42px;
+    line-height: 21.17px;
+  }
+  .menu-box li:last-child {
+    margin-right: 0;
+  }
+  .menu-item:hover, .menu-item:focus, .menu-item:active {
+    color: var(--blue);
+    transition: all 0.3s ease 0s;
+  }
+  .login-button {
+    width: 103px;
+    height: 41px;
+    line-height: 21.17px;
+    background: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .login-button:hover {
+    color: var(--orange);
+  }
+
+   /* Header styles end */
+
+   /* Preview styles start */
+
+  .preview {
+    background-image: url(../img/main-background.jpg);
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+    height: 765px;
+    padding-top: 30px;
+    padding-left: 8.33%;
+    padding-right: 29.72%;
+    font-family: "Aleo", serif;
+    font-weight: 700;
+    color: var(--white);
+  }
+  .explore-wrapper {
+    width: 892px;
+  }
+  .receive-recommendations {
+    width: 723px;
+    height: 24px;
+    margin-top: -10px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 0px;
+    letter-spacing: 0.5px;
+  }
+  .search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    margin-top: 36px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+  }
+  .search-form-field {
+    width: 560px;
+    height: 22px;
+    margin-left: 41px;
+    margin-top: 32px;
+    margin-bottom: 41px;
+    margin-right: 4px;
+    background-color: transparent;
+    border: 0;
+    font: italic 24px Aleo, Serif; 
+    font-weight: 400;
+    line-height: 29px;
+    outline: none;
+  }
+ ::placeholder {
+  color: var(--orange);
+  }
+  .search-form-button {
+    width: 228px;
+    height: 59px;
+    margin-top: 18px;
+    margin-right: 18px;
+    margin-bottom: 18px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    background: var(--blue);
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 31.75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .search-form-button:hover {
+    color: var(--orange);
+  }
+     /* Preview styles end */
+
+      /* Steps section styles start */
+      .steps {
+        margin-top: 80px;
+        margin-left: 9.1%;
+        margin-right: 9.1%;
+      }
+      .grid-container-steps {
+        display: grid;
+        grid-template-columns: 318px 222px 317px;
+        grid-auto-rows: 154px;
+        grid-column-gap: 160px;
+        margin-top: 40px;
+        margin-bottom: 97px;
+        font: 20px Aleo, Serif; 
+        font-weight: 400;
+        line-height: 20px;
+        color: var(--blue);
+      }
+      .bicycle-icon {
+        margin-left: 73px;
+        margin-right: 74px;
+        margin-bottom: 30px;
+      }
+      .calendar-icon {
+        margin-left: 61px;
+        margin-right: 61px;
+        margin-bottom: 30px;
+      }
+      .plane-icon {
+        margin-left: 109px;
+        margin-right: 108px;
+        margin-bottom: 30px;
+      }
+      /* Steps section styles end */
+
+  /* Destinations section styles start */
+  .destinations-japan {
+    background: url(../img/destination-japan.png) no-repeat center;
+    background-size: cover;
+    width: 800px;
+    height: 800px;
+    margin-top: 45px;
+    margin-left: 320px;
+  }
+.country-name {
+  font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: var(--white);
+    padding-top: 718px;
+    padding-left: 15px;
+}
+.slider-buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  width: 80px;
+  height: 20px;
+}
+.find-more-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 228px;
+    height: 59px;
+    margin-bottom: 80px;
+    padding-right: 32px;
+    background: var(--blue);
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 31.75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .find-more-button:hover {
+    color: var(--orange);
+  }
+  .find-more-button:before {
+    content: url(../img/arrow-right.svg);
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding-left: 31px;
+  }
+
+  /* Destinations section styles end */
+
+  /* Stories section styles start */
+  .stories-wrapper-background {
+    background: url(../img/stories-background.jpg) no-repeat;
+    background-size: cover;
+    height: 1331px;
+  }
+  .stories-wrapper {
+    background: rgba(255, 255, 255, 0.7);
+    padding-bottom: 40px;
+  }
+  .grid-container-stories {
+    display: grid;
+    grid-template-columns: 400px 760px;
+    grid-template-rows: 250px;
+    grid-row-gap: 20px;
+    grid-column-gap: 43px;
+    padding-top: 40px;
+    padding-left: 8.1%;
+  }
+  .stories-text {
+    font: 20px Aleo, Serif; 
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--blue);
+    padding-top: 25px;
+  }
+  .stories-text-button {
+    font: 20px Aleo, Serif; 
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--blue);
+    text-decoration: underline;
+  }
+  .grid-utah-1 {
+    padding-top: 10px;
+  }
+  .grid-utah-2 {
+    padding-top: 10px;
+  }
+  .see-more-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 228px;
+    height: 59px;
+    padding-right: 32px;
+    background: var(--blue);
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 31.75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 24px;
+  }
+  .see-more-button:hover {
+    color: var(--orange);
+  }
+  .see-more-button:before {
+    content: url(../img/arrow-right.svg);
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding-left: 31px;
+  }
+  /* Stories section styles end */
+
+  /* Footer styles start */
+  footer {
+  display: flex;
+  align-items: center;
+  font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--white);
+    margin-top: 15px;
+    margin-left: 41%;
+}
+.footer-icons {
+  padding-left: 328px;
+}
+.youtube-icon {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+  /* Footer styles end */
+
+     
