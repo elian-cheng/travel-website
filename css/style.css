@@ -63,6 +63,7 @@
   }
   body {
     background: #E5E5E5;
+    overflow-x: hidden;
   }
   li, a, button {
     font-family: "Red Hat Text", sans-serif;
@@ -256,14 +257,97 @@
       }
       /* Steps section styles end */
 
-  /* Destinations section styles start */
-  .destinations-japan {
-    background: url(../img/destination-japan.png) no-repeat center;
-    background-size: cover;
-    width: 800px;
-    height: 800px;
-    margin-top: 45px;
-    margin-left: 320px;
+  /* Destinations section styles start -  Slider */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .container {
+    width: 2400px;
+    margin-bottom: 60px;
+  }
+  .slider {
+    outline: none;
+    width: 100%;
+  }
+  .slider-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 60px;
+    left: 0;
+    transition: all ease 1s;
+  }
+  .slide {
+    display: flex;
+    overflow: hidden;
+    border: transparent;
+    border-radius: 1em;
+    max-width: 800px;
+    height: auto;
+  }
+  .pic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  } 
+  /* .slide img:first-child {
+    transform: translateX(-50%);
+  } */
+  /* 
+  h3, h4 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 20px 0 30px 0;
+  } */
+  .slide-title {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    bottom: 5%;
+    padding-left: 15px;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-100%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
   }
 .country-name {
   font-family: "Red Hat Text", sans-serif;
@@ -273,15 +357,6 @@
     color: var(--white);
     padding-top: 718px;
     padding-left: 15px;
-}
-.slider-buttons {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 24px;
-  margin-bottom: 40px;
-  width: 80px;
-  height: 20px;
 }
 .find-more-button {
     display: flex;
