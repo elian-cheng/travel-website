@@ -7,6 +7,7 @@
   <meta name="description" content="Travel website">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
   <title>Travel Portal - Explore the beauty of the World</title>
 </head>
 <body>
@@ -63,11 +64,50 @@
         </section>
         <section class="destinations" id="destinations">
           <h2>POPULAR DESTINATIONS</h2>
-          <div class="destinations-japan">
-            <p class="country-name">JAPAN</p>
-          </div>
-          <img class="slider-buttons" src="./img/slider-buttons.png" alt="slider buttons">
-          <button type="submit" class="find-more-button">Find More</button>
+            <div class="wrapper">
+              <div class="container">
+                <button class="carousel-button prev slider-prev" data-carousel-button="prev">&#8656;</button>
+                <button class="carousel-button next slider-next" data-carousel-button="next">&#8658;</button>
+                <div class="slider">
+                    <div class="slider-line">
+                      <div class="slide">
+                        <img class="pic slide-pic first-pic" src="./img/destinations-slider-1.jpg" alt="Destination Spain">
+                        <p class="slide-title">spain</p>
+                      </div>
+                      <div class="slide">
+                        <img class="pic slide-pic" src="./img/destinations-slider-2.jpg" alt="Destination Japan">
+                        <p class="slide-title">japan</p>
+                      </div>
+                      <div class="slide">
+                        <img class="pic slide-pic last-pic" src="/img/destinations-slider-3.jpg" alt="Destination USA">
+                        <p class="slide-title">usa</p>
+                      </div>
+                      <div class="slide">
+                        <img class="pic" src="./img/destinations-slider-1.jpg" alt="Destination Spain">
+                        <p class="slide-title">spain</p>
+                      </div>
+                      <div class="slide">
+                        <img class="pic" src="./img/destinations-slider-2.jpg" alt="Destination Japan">
+                        <p class="slide-title">japan</p>
+                      </div>
+                      <div class="slide">
+                        <img class="pic" src="./img/destinations-slider-3.jpg" alt="Destination USA">
+                        <p class="slide-title">usa</p>
+                      </div>
+                      <div class="slide">
+                        <img class="pic" src="./img/destinations-slider-1.jpg" alt="Destination Spain">
+                      </div>
+                      <div class="slide">
+                        <img class="pic" src="./img/destinations-slider-2.jpg" alt="Destination Japan">
+                      </div>
+                      <div class="slide">
+                        <img class="pic" src="./img/destinations-slider-3.jpg" alt="Destination USA">
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <button type="submit" class="find-more-button">Find More</button>
+      </div>
         </section>
 
         <section class="stories" id="stories">
